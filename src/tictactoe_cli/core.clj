@@ -70,12 +70,12 @@
                   (clojure.string/upper-case (name %))
                   %)
                board)]
-    (println (nth board 0) (nth board 1) (nth board 2))
-    (println (nth board 3) (nth board 4) (nth board 5))
-    (println (nth board 6) (nth board 7) (nth board 8))))
+    (println (nth board 0) "|" (nth board 1) "|" (nth board 2))
+    (println "---------")
+    (println (nth board 3) "|" (nth board 4) "|" (nth board 5))
+    (println "---------")
+    (println (nth board 6) "|" (nth board 7) "|" (nth board 8))))
 
-;; TODO: can we make the board look prettier, or more board-like,
-;; eg. use | - to create a grid.
 
 
 #_(defn player-name
