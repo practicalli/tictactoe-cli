@@ -2,7 +2,7 @@
 
 TicTacToe game written in Clojure, running on the command line with keyboard input for each player (no AI for a computer player yet).
 
-This project is from the[TicTacToe game from Practicalli Clojure](https://practicalli.github.io/clojure/games/tictactoe-cli/)
+This project is from the[TicTacToe game from Practicalli Clojure](https://practicalli.github.io/clojure/games/tictactoe-cli/) (work in progress)
 
 ## Usage
 
