@@ -202,7 +202,7 @@
   "The game loop.
   We iterate through the player sequence (alternate player turns)
   until there is a winner or the board is full."
-  []
+  [starting-board player-sequence]
   (loop [board starting-board
          player-sequence player-sequence]
     (let [winner (winner? board)]
@@ -217,4 +217,4 @@
          (rest player-sequence))))))
 
 
-(play-game)
+(play-game starting-board player-sequence)
