@@ -112,6 +112,9 @@
     (if (every? #{:o} triple)
       :o)))
 
+
+;; some tests because I had a bug in my code (it was in the triples function)
+
 (triple-winner? [1 2 3])
 ;; => nil
 (triple-winner? [:x 2 3])
