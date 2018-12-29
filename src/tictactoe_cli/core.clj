@@ -67,7 +67,7 @@
   [board]
   (let [board (map
                #(if (keyword? %)
-                  (name %)
+                  (clojure.string/upper-case (name %))
                   %)
                board)]
     (println (nth board 0) (nth board 1) (nth board 2))
@@ -91,7 +91,7 @@
 (defn player-name
   "Convert player representation, :o or :x to string, o or x"
   [player]
-  (name player))
+  (clojure.string/upper-case (name player)))
 
 
 
