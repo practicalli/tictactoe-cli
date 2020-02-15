@@ -166,7 +166,11 @@
 
 (def player-sequence
   "Generate an infinite lazy sequence for the player turns"
-  (cycle [:o :x]))
+  (cycle [:x :o]))
+
+#_(take 10 (cycle [:x :o]))
+;; => (:x :o :x :o :x :o :x :o :x :o)
+
 
 
 ;; We need to get a move from the human player, by them entering a move via the keyboard.
